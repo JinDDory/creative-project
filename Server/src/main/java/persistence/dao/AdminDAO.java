@@ -1,4 +1,4 @@
-package persistence.DAO;
+package persistence.dao;
 
 public class AdminDAO {
 }

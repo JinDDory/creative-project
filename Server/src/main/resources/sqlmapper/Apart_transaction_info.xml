@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.Apart_transaction_infoMapper">
-    <resultMap type="persistence.DTO.Apart_transaction_infoDTO" id="result">
+    <resultMap type="persistence.dto.Apart_transaction_infoDTO" id="result">
         <result column="transaction_id" property="transaction_id"/>
         <result column="contract_y_m" property="contract_y_m"/>
         <result column="contract_d" property="contract_d"/>

@@ -1,5 +1,3 @@
-package persistence;
-
 import java.sql.*;
 import java.time.LocalDateTime;
 
