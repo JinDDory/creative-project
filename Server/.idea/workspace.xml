@@ -5,48 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74538fd5-6481-4b4f-83d3-c938de58471a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_dbcp2_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_pool2_2_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Server.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Server.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DAO/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DAO/Apart_infoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/Apart_infoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DAO/Apart_price_indicesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/Apart_price_indicesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DAO/Apart_transaction_infoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/Apart_transaction_infoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DAO/FavoriteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/FavoriteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DTO/AdiminDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dto/AdiminDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DTO/Apart_infoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dto/Apart_infoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DTO/Apart_price_indicesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dto/Apart_price_indicesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DTO/Apart_transaction_infoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dto/Apart_transaction_infoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DTO/FavoriteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dto/FavoriteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/sqlmapper/Admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapper/Admin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/sqlmapper/Apart_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/sqlmapper/Apart_price_indices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_price_indices.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/sqlmapper/Apart_transaction_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_transaction_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DummyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DummyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +17,14 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -65,7 +32,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="291F4yvM8X4SWpf5Ci9F0DCuOv4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
