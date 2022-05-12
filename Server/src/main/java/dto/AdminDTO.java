@@ -1,12 +1,11 @@
 package dto;
 
+import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import java.io.Serializable;
 
 @Getter
-@ToString
-
-public class AdminDTO {
+@Builder
+public class AdminDTO implements Serializable {
     private String userId;
 }

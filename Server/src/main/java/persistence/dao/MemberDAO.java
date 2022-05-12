@@ -33,7 +33,7 @@ public class MemberDAO {
     }
 
 
-    public void insertMember(MemberDTO dto) throws DuplicateMemberException {
+    public void insertMember(MemberDTO dto)  {
         SqlSession session = null;
         try {
             session = sqlSessionFactory.openSession();

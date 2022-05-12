@@ -1,35 +1,35 @@
 package persistence.dao;
 
-import dto.ApartInfoDTO;
+import dto.ApartTransactionDTO;
 import org.apache.ibatis.javassist.bytecode.DuplicateMemberException;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import persistence.mapper.IApartInfoMapper;
+import persistence.mapper.IApartTransactionMapper;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class ApartInfoDAO {
+public class ApartTransactionDAO {
 
     private SqlSessionFactory sqlSessionFactory = null;
 
-    public ApartInfoDAO(SqlSessionFactory sqlSessionFactory) {
+    public ApartTransactionDAO(SqlSessionFactory sqlSessionFactory) {
         this.sqlSessionFactory = sqlSessionFactory;
     }
 
 
     // 아파트 거래정보 전체 조회
-    public List<ApartInfoDTO> selectAll(){
+    public List<ApartTransactionDTO> selectAll(){
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
-        List<ApartInfoDTO> dtoList = mapper.selectAll();
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
+        List<ApartTransactionDTO> dtoList = mapper.selectAll();
         return dtoList;
     }
 
     // 지역별 아파트 거래정보 조회
-    public List<ApartInfoDTO> selectBySiGunGu(ApartInfoDTO dto){
+    public List<ApartTransactionDTO> selectBySiGunGu(ApartTransactionDTO dto){
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
-        List<ApartInfoDTO> dtoList = mapper.selectBySiGunGu(dto);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
+        List<ApartTransactionDTO> dtoList = mapper.selectBySiGunGu(dto);
         return dtoList;
     }
 
@@ -37,42 +37,42 @@ public class ApartInfoDAO {
 
 
     // 면적별 아파트 거래정보 조회
-    public List<ApartInfoDTO> selectByArea(ApartInfoDTO dto){
+    public List<ApartTransactionDTO> selectByArea(ApartTransactionDTO dto){
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
-        List<ApartInfoDTO> dtoList = mapper.selectByArea(dto);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
+        List<ApartTransactionDTO> dtoList = mapper.selectByArea(dto);
         return dtoList;
     }
 
 
     // 건축년도별 아파트 거래정보 조회
-    public List<ApartInfoDTO> selectByBuildYear(ApartInfoDTO dto){
+    public List<ApartTransactionDTO> selectByBuildYear(ApartTransactionDTO dto){
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
-        List<ApartInfoDTO> dtoList = mapper.selectByBuildYear(dto);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
+        List<ApartTransactionDTO> dtoList = mapper.selectByBuildYear(dto);
         return dtoList;
     }
 
     // 층 이상 아파트 거래정보 조회
-    public List<ApartInfoDTO> selectByFloorMore(ApartInfoDTO dto){
+    public List<ApartTransactionDTO> selectByFloorMore(ApartTransactionDTO dto){
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
-        List<ApartInfoDTO> dtoList = mapper.selectByFloorMore(dto);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
+        List<ApartTransactionDTO> dtoList = mapper.selectByFloorMore(dto);
         return dtoList;
     }
 
     // 층 이하 아파트 거래정보 조회
-    public List<ApartInfoDTO> selectByFloorLess(ApartInfoDTO dto){
+    public List<ApartTransactionDTO> selectByFloorLess(ApartTransactionDTO dto){
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
-        List<ApartInfoDTO> dtoList = mapper.selectByFloorLess(dto);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
+        List<ApartTransactionDTO> dtoList = mapper.selectByFloorLess(dto);
         return dtoList;
     }
 
     //아파트 거래정보 등록 (모든 컬럼 입력)
-    public void insertApartInfo(ApartInfoDTO dto) throws DuplicateMemberException {
+    public void insertApartInfo(ApartTransactionDTO dto) throws DuplicateMemberException {
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
         try {
             mapper.insertApartInfo(dto);
             session.commit();
@@ -85,9 +85,9 @@ public class ApartInfoDAO {
     }
 
     // 아파트 거래정보 수정
-    public void updateApartInfo(ApartInfoDTO dto) throws NoSuchElementException {
+    public void updateApartInfo(ApartTransactionDTO dto) throws NoSuchElementException {
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
         try {
             mapper.updateApartInfo(dto);
             session.commit();
@@ -101,9 +101,9 @@ public class ApartInfoDAO {
 
 
     //해당 지역 아파트 거래정보 삭제
-    public void deleteApartInfoByRegion(ApartInfoDTO dto) throws NoSuchElementException {
+    public void deleteApartInfoByRegion(ApartTransactionDTO dto) throws NoSuchElementException {
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
         try {
             mapper.deleteApartInfoByRegion(dto);
             session.commit();
@@ -116,9 +116,9 @@ public class ApartInfoDAO {
     }
 
     //해당 날짜 아파트 거래정보 삭제
-    public void deleteApartInfoByBuildYear(ApartInfoDTO dto) {
+    public void deleteApartInfoByBuildYear(ApartTransactionDTO dto) {
         SqlSession session = sqlSessionFactory.openSession();
-        IApartInfoMapper mapper = session.getMapper(IApartInfoMapper.class);
+        IApartTransactionMapper mapper = session.getMapper(IApartTransactionMapper.class);
         try {
             mapper.deleteApartInfoByBuildYear(dto);
             session.commit();

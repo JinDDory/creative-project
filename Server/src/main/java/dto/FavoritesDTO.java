@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 @Getter
 @Builder
-public class MemberDTO implements Serializable {
+public class FavoritesDTO implements Serializable {
     private String userId;
+    private int apartTransactionId;
 }

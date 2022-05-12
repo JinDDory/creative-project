@@ -1,6 +1,8 @@
 package service;
 
+import dto.AdminDTO;
 import dto.MemberDTO;
+import dto.UserDTO;
 import org.apache.ibatis.javassist.bytecode.DuplicateMemberException;
 import persistence.dao.MemberDAO;
 
@@ -25,20 +27,17 @@ public class MemberService {
     }
 
     // 회원 추가
-    public void insertMember(MemberDTO dto) {
-        try {
-            memberDAO.insertMember(dto);
-        } catch (DuplicateMemberException e) {
-            System.out.println(e.getMessage());
-        }
+    public void create(UserDTO userDTO) {
+        MemberDTO dto = MemberDTO.builder()
+                .userId(userDTO.getUserId())
+                .build();
+
+        // 관리자 데이터베이스에 생성
+        memberDAO.insertMember(dto);
     }
 
     // 회원 삭제
     public void deleteMember(MemberDTO dto) {
-        try {
-            memberDAO.deleteMember(dto);
-        } catch (NoSuchElementException e) {
-            System.out.println(e.getMessage());
-        }
+        memberDAO.deleteMember(dto);
     }
 }

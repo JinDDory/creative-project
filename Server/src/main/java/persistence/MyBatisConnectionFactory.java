@@ -3,7 +3,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import persistence.mapper.IAdminMapper;
-import persistence.mapper.IApartInfoMapper;
+import persistence.mapper.IApartTransactionMapper;
 import persistence.mapper.IMemberMapper;
 import persistence.mapper.IUserMapper;
 
@@ -24,7 +24,7 @@ public class MyBatisConnectionFactory {
                         IUserMapper.class,
                         IAdminMapper.class,
                         IMemberMapper.class,
-                        IApartInfoMapper.class
+                        IApartTransactionMapper.class
                 };
                 for (Class mapper : mappers) {
                     sqlSessionFactory.getConfiguration().addMapper(mapper);

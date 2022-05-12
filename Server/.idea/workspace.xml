@@ -5,57 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74538fd5-6481-4b4f-83d3-c938de58471a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartTransactionInfoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistence/mapper/IUserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_dbcp2_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_pool2_2_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_16.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/Server.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Server.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/Server.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Server.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/AdminDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/AdminDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DTO/AdiminDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DTO/Apart_infoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DTO/Apart_price_indicesDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DTO/Apart_transaction_infoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DTO/FavoriteDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DTO/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/MyBatisConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/MyBatisConnectionFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Dummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/AdminDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/AdminDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ApartInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ApartTransactionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ApartPriceIndicesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ApartPriceIndicesDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ApartTransactionInfoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/FavoriteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/FavoritesDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/persistence/MyBatisConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/MyBatisConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/Apart_infoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartInfoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/Apart_price_indicesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartPriceIndicesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/Apart_transaction_infoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartTransactionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartTransactionInfoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/MemberDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dto/AdiminDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dto/Apart_infoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dto/Apart_price_indicesDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dto/Apart_transaction_infoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dto/FavoriteDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/mapper/mapper/DummyMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/mapper/sql/DummySql.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/DummyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Admin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_price_indices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_price_indices.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_transaction_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_transaction_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/mapper/IAdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/mapper/IAdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/mapper/IApartInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/mapper/IApartTransactionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/sql/AdminSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/sql/AdminSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/sql/ApartInfoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/sql/ApartTransactionSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ApartInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ApartTransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_price_indices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_transaction_info.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +85,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">

@@ -1,11 +1,10 @@
 package service;
 
 import dto.AdminDTO;
-import org.apache.ibatis.javassist.bytecode.DuplicateMemberException;
+import dto.UserDTO;
 import persistence.dao.AdminDAO;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 
 public class AdminService {
     private final AdminDAO adminDAO;
@@ -15,30 +14,27 @@ public class AdminService {
     }
 
     // 전체 조회
-    public List<AdminDTO> selectAll() {
+    public List<AdminDTO> retrieveAll() {
         return adminDAO.selectAll();
     }
 
     // 아이디로 조회
-    public AdminDTO selectAdminById(AdminDTO dto) {
+    public AdminDTO retrieveById(AdminDTO dto) {
         return adminDAO.selectUserById(dto);
     }
 
-    // 회원 추가
-    public void insertAdmin(AdminDTO dto) {
-        try {
-            adminDAO.insertAdmin(dto);
-        } catch (DuplicateMemberException e) {
-            System.out.println(e.getMessage());
-        }
+    // 관리자 생성
+    public void create(UserDTO userDTO) {
+        AdminDTO dto = AdminDTO.builder()
+                .userId(userDTO.getUserId())
+                .build();
+
+        // 관리자 데이터베이스에 생성
+        adminDAO.insertAdmin(dto);
     }
 
-    // 회원 삭제
+    // 관리자 삭제
     public void deleteAdmin(AdminDTO dto) {
-        try {
-            adminDAO.deleteAdmin(dto);
-        } catch (NoSuchElementException e) {
-            System.out.println(e.getMessage());
-        }
+        adminDAO.deleteAdmin(dto);
     }
 }

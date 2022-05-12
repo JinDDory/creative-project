@@ -6,7 +6,7 @@ import org.apache.ibatis.jdbc.SQL;
 
 public class AdminSql {
 
-    // 관리자 전체 조회
+    // 전체 조회
     public static String selectAll() {
         return new SQL() {{
             SELECT("*");
@@ -15,7 +15,7 @@ public class AdminSql {
         }}.toString();
     }
 
-    // 관리자 아이디로 조회
+    // 아이디로 조회
     public static String selectAdminById(AdminDTO dto) {
         return new SQL() {{
             SELECT("*");
@@ -31,8 +31,6 @@ public class AdminSql {
             VALUES("user_id", "#{userId}");
         }}.toString();
     }
-
-    // 아이디 수정 불가능
 
     // 관리자 삭제
     public static String deleteAdmin(AdminDTO dto) {

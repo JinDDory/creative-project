@@ -1,10 +1,9 @@
 package persistence.sql;
 
-
-import dto.ApartInfoDTO;
+import dto.ApartTransactionDTO;
 import org.apache.ibatis.jdbc.SQL;
 
-public class ApartInfoSql {
+public class ApartTransactionSql {
     final static int DEFAULT_VALUE = 0;
 
     // 아파트 거래정보 전체 조회
@@ -17,7 +16,7 @@ public class ApartInfoSql {
     }
 
     // 지역별 아파트 거래정보 조회
-    public static String selectBySiGunGu(ApartInfoDTO dto) {
+    public static String selectBySiGunGu(ApartTransactionDTO dto) {
         return new SQL() {{
             SELECT("*");
             FROM("Apart_info");
@@ -27,7 +26,7 @@ public class ApartInfoSql {
     }
 
 //    // 개인예산 이하 아파트 거래정보 조회
-//    public static String selectByAmountLess(ApartInfoDTO dto) {
+//    public static String selectByAmountLess(ApartTransactionDTO dto) {
 //        return new SQL() {{
 //            SELECT("*");
 //            FROM("Apart_info");
@@ -37,7 +36,7 @@ public class ApartInfoSql {
 //    }
 
     // 면적별 아파트 거래정보 조회 (이상)
-    public static String selectByArea(ApartInfoDTO dto) {
+    public static String selectByArea(ApartTransactionDTO dto) {
         return new SQL() {{
             SELECT("*");
             FROM("Apart_info");
@@ -47,7 +46,7 @@ public class ApartInfoSql {
     }
 
     // 건축년도별 아파트 거래정보 조회 (이상)
-    public static String selectByBuildYear(ApartInfoDTO dto) {
+    public static String selectByBuildYear(ApartTransactionDTO dto) {
         return new SQL() {{
             SELECT("*");
             FROM("Apart_info");
@@ -57,7 +56,7 @@ public class ApartInfoSql {
     }
 
     // 해당 층 이상 아파트 거래정보 조회
-    public static String selectByFloorMore(ApartInfoDTO dto) {
+    public static String selectByFloorMore(ApartTransactionDTO dto) {
         return new SQL() {{
             SELECT("*");
             FROM("Apart_info");
@@ -67,7 +66,7 @@ public class ApartInfoSql {
     }
 
     // 해당 층 이하 아파트 거래정보 조회
-    public static String selectByFloorLess(ApartInfoDTO dto) {
+    public static String selectByFloorLess(ApartTransactionDTO dto) {
         return new SQL() {{
             SELECT("*");
             FROM("Apart_info");
@@ -77,7 +76,7 @@ public class ApartInfoSql {
     }
 
     //아파트 거래정보 등록 (모든 컬럼 입력)
-    public static String insertApartInfo(ApartInfoDTO dto) {
+    public static String insertApartInfo(ApartTransactionDTO dto) {
         return new SQL() {{
             INSERT_INTO("Apart_info");
             VALUES("apartInfoId", "#{apartInfoId}");
@@ -91,7 +90,7 @@ public class ApartInfoSql {
     }
 
     // 아파트 거래정보 수정
-    public static String updateApartInfo(ApartInfoDTO dto) {
+    public static String updateApartInfo(ApartTransactionDTO dto) {
         return new SQL() {{
             UPDATE("Apart_info");
             if (dto.getSiGunGu() != null)
@@ -111,7 +110,7 @@ public class ApartInfoSql {
     }
 
     //해당 지역 아파트 거래정보 삭제
-    public static String deleteApartInfoByRegion(ApartInfoDTO dto) {
+    public static String deleteApartInfoByRegion(ApartTransactionDTO dto) {
         return new SQL() {{
             DELETE_FROM("Apart_info");
             WHERE("siGunGu like CONCAT('%',#{siGunGu},'%')");
@@ -119,7 +118,7 @@ public class ApartInfoSql {
     }
 
     //해당 날짜 아파트 거래정보 삭제
-    public static String deleteApartInfoByBuildYear(ApartInfoDTO dto) {
+    public static String deleteApartInfoByBuildYear(ApartTransactionDTO dto) {
         return new SQL() {{
             DELETE_FROM("Apart_info");
             WHERE("buildYear like CONCAT('%',#{buildYear},'%')");

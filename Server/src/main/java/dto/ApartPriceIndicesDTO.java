@@ -1,17 +1,18 @@
 package dto;
 
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
+import java.io.Serializable;
 
-public class ApartPriceIndicesDTO {
-    private String apart_price_id;
+@Getter
+@Builder
+public class ApartPriceIndicesDTO implements Serializable {
+    private String id;
     private String region;
     private String date;
-    private String price_indices;
+    private String priceIndices;
 }

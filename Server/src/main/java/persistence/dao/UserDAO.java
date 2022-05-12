@@ -33,7 +33,7 @@ public class UserDAO {
     }
 
 
-    public void insertUser(UserDTO dto) throws DuplicateMemberException {
+    public void insertUser(UserDTO dto) {
         SqlSession session = null;
         try {
             session = sqlSessionFactory.openSession();
@@ -63,7 +63,7 @@ public class UserDAO {
         }
     }
 
-    public void deleteUser(UserDTO dto) throws NoSuchElementException{
+    public void deleteUser(UserDTO dto) {
         SqlSession session = null;
         try {
             session = sqlSessionFactory.openSession();

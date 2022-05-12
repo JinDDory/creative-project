@@ -16,6 +16,7 @@ public class AdminDAO {
         this.sqlSessionFactory = sqlSessionFactory;
     }
 
+    // 전체 조회
     public List<AdminDTO> selectAll(){
         SqlSession session = sqlSessionFactory.openSession();
         IAdminMapper mapper = session.getMapper(IAdminMapper.class);
@@ -24,6 +25,7 @@ public class AdminDAO {
         return dtoList;
     }
 
+    // 아이디로 조회
     public AdminDTO selectUserById(AdminDTO dto){
         SqlSession session = sqlSessionFactory.openSession();
         IAdminMapper mapper = session.getMapper(IAdminMapper.class);
@@ -32,8 +34,8 @@ public class AdminDAO {
         return adminDTO;
     }
 
-
-    public void insertAdmin(AdminDTO dto) throws DuplicateMemberException {
+    // 관리자 생성
+    public void insertAdmin(AdminDTO dto) {
         SqlSession session = null;
         try {
             session = sqlSessionFactory.openSession();
@@ -48,22 +50,8 @@ public class AdminDAO {
         }
     }
 
-//    public void updateAdmin(AdminDTO dto){
-//        SqlSession session = null;
-//        try {
-//            session = sqlSessionFactory.openSession();
-//            IAdminMapper mapper = session.getMapper(IAdminMapper.class);
-//            mapper.updateAdmin(dto);
-//            session.commit();
-//        } catch (Exception e) {
-//            session.rollback();
-//            e.printStackTrace();
-//        } finally {
-//            session.close();
-//        }
-//    }
-
-    public void deleteAdmin(AdminDTO dto) throws NoSuchElementException {
+    // 관리자 삭제
+    public void deleteAdmin(AdminDTO dto) {
         SqlSession session = null;
         try {
             session = sqlSessionFactory.openSession();
