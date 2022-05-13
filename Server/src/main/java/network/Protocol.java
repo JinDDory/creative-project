@@ -47,16 +47,17 @@ public class Protocol {
     public static final int LEN_ENTITY = 1;
     public static final int LEN_READ_OPTION = 1;
     public static final int LEN_OBJECT_LENGTH_ARR_LENGTH = 4;
-    public static final int LEN_OBJECT_LENGTH_ARR = Byte.SIZE * LEN_OBJECT_LENGTH_ARR_LENGTH;
+    public static final int LEN_OBJECT_LENGTH_ARR = 4;
 
     public static final int LEN_HEADER = LEN_TYPE + LEN_CODE + LEN_ENTITY + LEN_READ_OPTION + LEN_OBJECT_LENGTH_ARR_LENGTH;
 
-
+    //header
     private byte type;
     private byte code;
     private byte entity;
     private byte readOption;
-    private int objectLengthArrLength; // objectLengthArr의 길이
+    private int objectLengthArrLength; // objectLengthArr의 길이(개수)
+    // body
     private int[] objectLengthArr; // 각 객체들의 크기 배열
     private int bodyLength;
     private byte[] body;
@@ -224,8 +225,8 @@ public class Protocol {
         type = packet[0];
         code = packet[LEN_TYPE];
         entity = packet[LEN_TYPE + LEN_CODE];
-        readOption = packet[LEN_TYPE+LEN_CODE+LEN_ENTITY];
-        byte[] bytes = new byte[LEN_OBJECT_LENGTH_ARR];
+        readOption = packet[LEN_TYPE + LEN_CODE + LEN_ENTITY];
+        byte[] bytes = new byte[LEN_OBJECT_LENGTH_ARR_LENGTH];
         System.arraycopy(packet, LEN_TYPE + LEN_CODE + LEN_ENTITY+LEN_READ_OPTION, bytes, 0, LEN_OBJECT_LENGTH_ARR);
         objectLengthArrLength = byteToInt(bytes);
 

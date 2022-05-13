@@ -5,40 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74538fd5-6481-4b4f-83d3-c938de58471a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Server.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Server.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Server.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Server.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Dummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/AdminDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/AdminDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ApartInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ApartTransactionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ApartPriceIndicesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ApartPriceIndicesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ApartTransactionInfoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/FavoriteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/FavoritesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/MemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/MyBatisConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/MyBatisConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartTransactionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/ApartTransactionInfoDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/mapper/IAdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/mapper/IAdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/mapper/IApartInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/mapper/IApartTransactionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/sql/AdminSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/sql/AdminSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/sql/ApartInfoSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistence/sql/ApartTransactionSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ApartInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ApartTransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_info.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_price_indices.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmapper/Apart_transaction_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/network/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/Protocol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
