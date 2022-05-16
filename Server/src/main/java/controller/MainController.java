@@ -10,6 +10,7 @@ import persistence.dao.UserDAO;
 import service.AdminService;
 import service.MemberService;
 import service.UserService;
+import persistence.MyBatisConnectionFactory;
 
 import java.io.*;
 import java.net.Socket;
@@ -36,15 +37,17 @@ public class MainController extends Thread{
     private final AdminDAO adminDAO;
     private final MemberDAO memberDAO;
     private LoginController loginController;
+    private final MyBatisConnectionFactory myBatisConnectionFactory;
+
 
     {
+        myBatisConnectionFactory = MyBatisConnectionFactory.getSqlSessionFactory();
         userDAO = new UserDAO(MyBatisConnectionFactory.getSqlSessionFactory());
         adminDAO = new AdminDAO(MyBatisConnectionFactory.getSqlSessionFactory());
         memberDAO = new MemberDAO(MyBatisConnectionFactory.getSqlSessionFactory());
         adminService = new AdminService(adminDAO);
         memberService = new MemberService(memberDAO);
         userService = new UserService(userDAO, adminService, memberService);
-        loginController = new LoginController(is, out, userService, adminService, memberService);
 
     }
 
@@ -54,6 +57,8 @@ public class MainController extends Thread{
         try {
             is = new ObjectInputStream(socket.getInputStream());
             out = new ObjectOutputStream(socket.getOutputStream());
+            loginController = new LoginController(is, out, userService, adminService, memberService);
+
         } catch (IOException e) {
             e.printStackTrace();
         }

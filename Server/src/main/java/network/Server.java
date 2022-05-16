@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-//각 클라이언트와 TCP통신을 연결하고, 쓰레드를 생성하는 객체
 public class Server {
 
     public Server() {
@@ -21,7 +20,7 @@ public class Server {
     }
 
     private static ServerSocket serverSocket;
-    private static MainController clients[];    // MainController는 thread를 상속받음. 스레드 배열.
+    private static MainController clients[];
     private static int clientCount; // 연결된 클라이언트 개수
 
     // 구동
@@ -44,9 +43,7 @@ public class Server {
     public synchronized void addThread(Socket socket) throws IOException {
         // 최대 스레드 개수를 넘지 않을 때만
         if (clientCount < clients.length) {
-            MainController thread = new MainController(
-                    socket
-            );
+            MainController thread = new MainController(socket);
             clients[clientCount++] = thread;     // 스레드 배열에 생성한 스레드 추가
             System.out.println("Create thread : clientCount = " + clientCount);
             System.out.println("client Port : " + thread.getClientID());
@@ -66,7 +63,7 @@ public class Server {
         return -1;
     }
 
-    // 쓰레드 지우기
+    // 스레드 제거
     public synchronized static void removeThread(int ID) {
         int pos = findClient(ID);
         if (pos >= 0) {
