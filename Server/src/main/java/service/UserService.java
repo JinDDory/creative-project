@@ -28,6 +28,7 @@ public class UserService {
         if (userDTO.getUserPassword() != recvDTO.getUserPassword()) {
             throw new NoSuchUserException("비밀번호가 일치하지 않습니다.");
         }
+
         // 로그인 성공 시 해당 사용자 정보 반환
         return userDTO;
     }

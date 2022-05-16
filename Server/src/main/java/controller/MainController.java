@@ -1,5 +1,6 @@
 package controller;
 
+import network.Packet;
 import network.Protocol;
 import network.Server;
 import persistence.MyBatisConnectionFactory;
@@ -34,14 +35,17 @@ public class MainController extends Thread{
     private final UserDAO userDAO;
     private final AdminDAO adminDAO;
     private final MemberDAO memberDAO;
+    private LoginController loginController;
 
     {
         userDAO = new UserDAO(MyBatisConnectionFactory.getSqlSessionFactory());
         adminDAO = new AdminDAO(MyBatisConnectionFactory.getSqlSessionFactory());
-        memberDAO = new MemberDAO(MyBatisConnectionFactory.getSqlSessionFactory();
+        memberDAO = new MemberDAO(MyBatisConnectionFactory.getSqlSessionFactory());
         adminService = new AdminService(adminDAO);
         memberService = new MemberService(memberDAO);
         userService = new UserService(userDAO, adminService, memberService);
+        loginController = new LoginController(is, out, userService, adminService, memberService);
+
     }
 
     public MainController(Socket socket){
@@ -57,11 +61,11 @@ public class MainController extends Thread{
 
     public void run() {
         running = true;
-        Protocol protocol = null;
+        Packet packet = new Packet();
         System.out.println("main controller entry");
         while (running) {
             try {
-                handler(protocol.read(is));
+                handler(packet.read(is));
             } catch (Exception e) {
                 e.printStackTrace();
                 exit(); // 스레드 종료
@@ -74,12 +78,14 @@ public class MainController extends Thread{
         return clientID;
     }
 
-    public void handler(Protocol protocol) {
+    public void handler(Packet recvPt) throws IOException {
         System.out.println("handler entry");
 
         // 로그인하기 전
         switch (userType) {
             case USER_UNDEFINED:
+                loginController.handler(recvPt);
+                break;
         }
     }
 
