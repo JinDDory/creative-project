@@ -9,13 +9,11 @@ public class Protocol {
 
     // CODE : TYPE_REQUEST_CODE
     public static final int T1_CODE_CREATE = 1;
-    public static final int T1_CODE_INSERT = 2;
+    public static final int T1_CODE_READ = 2;
     public static final int T1_CODE_UPDATE = 3;
     public static final int T1_CODE_DELETE = 4;
     public static final int T1_CODE_LOGIN = 5;
     public static final int T1_CODE_LOGOUT = 6;
-    public static final int T1_CODE_APART_RECOMMEND = 7;
-    public static final int T1_CODE_INDICES_GRAPH = 8;
 
     // CODE : TYPE_RESPONSE_CODE
     public static final int T2_CODE_SUCCESS = 1;

@@ -1,8 +1,6 @@
 package controller;
 
-import com.sun.tools.javac.Main;
 import dto.AdminDTO;
-import dto.MemberDTO;
 import dto.MessageDTO;
 import dto.UserDTO;
 import exception.NoSuchUserException;
@@ -17,6 +15,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class LoginController {
+    public static final int USER_UNDEFINED = 1;
+    public static final int USER_MEMBER = 2;
+    public static final int USER_ADMIN = 3;
 
     private ObjectInputStream in;
     private ObjectOutputStream out;
@@ -33,16 +34,19 @@ public class LoginController {
         this.memberService = memberService;
     }
 
-    public void handler(Packet recvPt) throws IOException {
+    public int handler(Packet recvPt) throws IOException {
         switch (recvPt.getCode()) {
-            case Protocol.T1_CODE_LOGIN:
-                loginRequest(recvPt);
+            case Protocol.T1_CODE_LOGIN:  // 로그인 요청
+                return loginRequest(recvPt);
+            case Protocol.T1_CODE_CREATE:   // 계정 생성 요청
                 break;
-            case Protocol.T1_CODE_LOGOUT:
-                break;
+                 // 아이디 찾기
+              // 비밀번호 찾기
         }
+        return USER_UNDEFINED;
     }
 
+    // 로그인 요청
     private int loginRequest(Packet recvPt) throws IOException {
         System.out.println("loginRequest");
         Packet sendPt = new Packet(Protocol.TYPE_RESPONSE);
@@ -67,15 +71,31 @@ public class LoginController {
         AdminDTO adminDTO = AdminDTO.builder().userId(user.getUserId()).build();
         if (adminService.retrieveById(adminDTO) != null) {
             // 관리자
-            return MainController.USER_ADMIN;
+            return USER_ADMIN;
         } else {
             // 회원
-            return MainController.USER_MEMBER;
+            return USER_MEMBER;
         }
     }
 
-    private void logoutRequest(Packet recvPt) {
+    // 계정 생성 요청
+    private void createUser(Packet rectPt) throws Exception {
+        Packet sendPt = new Packet(Protocol.TYPE_RESPONSE);
 
+        try {
+            if (rectPt.getEntity() == Protocol.ENTITY_ADMIN) { // 관리자 계정생성
+                userService.createAdmin((UserDTO) rectPt.getBody().get(0));
+            } else if (rectPt.getEntity() == Protocol.ENTITY_MEMBER) { // 회원 계정생성
+                userService.createMember((UserDTO) rectPt.getBody().get(0));
+            }
+            sendPt.setCode(Protocol.T2_CODE_SUCCESS);
+            sendPt.send(out);
+        } catch (Exception e) {
+            // 계정생성 실패 시 예외처리
+            sendPt.setCode(Protocol.T2_CODE_FAIL);
+            sendPt.send(out);
+        }
     }
+
 
 }

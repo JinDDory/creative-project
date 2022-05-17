@@ -3,6 +3,7 @@ package controller;
 import network.Packet;
 import network.Protocol;
 import network.Server;
+import org.apache.ibatis.session.SqlSessionFactory;
 import persistence.MyBatisConnectionFactory;
 import persistence.dao.AdminDAO;
 import persistence.dao.MemberDAO;
@@ -10,7 +11,6 @@ import persistence.dao.UserDAO;
 import service.AdminService;
 import service.MemberService;
 import service.UserService;
-import persistence.MyBatisConnectionFactory;
 
 import java.io.*;
 import java.net.Socket;
@@ -37,14 +37,16 @@ public class MainController extends Thread{
     private final AdminDAO adminDAO;
     private final MemberDAO memberDAO;
     private LoginController loginController;
-    private final MyBatisConnectionFactory myBatisConnectionFactory;
+    private MemberController memberController;
+    private AdminController adminController;
+    private final SqlSessionFactory sqlSessionFactory;
 
 
     {
-        myBatisConnectionFactory = MyBatisConnectionFactory.getSqlSessionFactory();
-        userDAO = new UserDAO(MyBatisConnectionFactory.getSqlSessionFactory());
-        adminDAO = new AdminDAO(MyBatisConnectionFactory.getSqlSessionFactory());
-        memberDAO = new MemberDAO(MyBatisConnectionFactory.getSqlSessionFactory());
+        sqlSessionFactory =  MyBatisConnectionFactory.getSqlSessionFactory();
+        userDAO = new UserDAO(sqlSessionFactory);
+        adminDAO = new AdminDAO(sqlSessionFactory);
+        memberDAO = new MemberDAO(sqlSessionFactory);
         adminService = new AdminService(adminDAO);
         memberService = new MemberService(memberDAO);
         userService = new UserService(userDAO, adminService, memberService);
@@ -58,6 +60,7 @@ public class MainController extends Thread{
             is = new ObjectInputStream(socket.getInputStream());
             out = new ObjectOutputStream(socket.getOutputStream());
             loginController = new LoginController(is, out, userService, adminService, memberService);
+            memberController =
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -90,6 +93,11 @@ public class MainController extends Thread{
         switch (userType) {
             case USER_UNDEFINED:
                 loginController.handler(recvPt);
+                break;
+            case USER_MEMBER:
+
+                break;
+            case USER_ADMIN:
                 break;
         }
     }
