@@ -32,7 +32,6 @@ public class Protocol {
     public static final int READ_BY_ID = 2;
     public static final int READ_BY_OPTION = 3;
 
-
     // LENGTH
     public static final int LEN_TYPE = 1;
     public static final int LEN_CODE = 1;

@@ -1,7 +1,6 @@
 package controller;
 
-import network.Packet;
-import network.Protocol;
+import network.Header;
 import network.Server;
 import org.apache.ibatis.session.SqlSessionFactory;
 import persistence.MyBatisConnectionFactory;
@@ -14,6 +13,7 @@ import service.UserService;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
 
 public class MainController extends Thread{
 
@@ -60,7 +60,6 @@ public class MainController extends Thread{
             is = new ObjectInputStream(socket.getInputStream());
             out = new ObjectOutputStream(socket.getOutputStream());
             loginController = new LoginController(is, out, userService, adminService, memberService);
-            memberController =
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -69,11 +68,12 @@ public class MainController extends Thread{
 
     public void run() {
         running = true;
-        Packet packet = new Packet();
+        Header header = new Header();
         System.out.println("main controller entry");
         while (running) {
             try {
-                handler(packet.read(is));
+                ArrayList<Object> objectArrayList = (ArrayList<Object>) is.readObject();
+                handler(objectArrayList);
             } catch (Exception e) {
                 e.printStackTrace();
                 exit(); // 스레드 종료
@@ -86,16 +86,17 @@ public class MainController extends Thread{
         return clientID;
     }
 
-    public void handler(Packet recvPt) throws IOException {
+    public void handler(ArrayList<Object> objectArrayList) throws IOException {
         System.out.println("handler entry");
+
+
 
         // 로그인하기 전
         switch (userType) {
             case USER_UNDEFINED:
-                loginController.handler(recvPt);
+                loginController.handler(objectArrayList);
                 break;
             case USER_MEMBER:
-
                 break;
             case USER_ADMIN:
                 break;

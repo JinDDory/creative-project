@@ -4,7 +4,7 @@ import dto.AdminDTO;
 import dto.MessageDTO;
 import dto.UserDTO;
 import exception.NoSuchUserException;
-import network.Packet;
+import network.Header;
 import network.Protocol;
 import service.AdminService;
 import service.MemberService;
@@ -13,6 +13,8 @@ import service.UserService;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class LoginController {
     public static final int USER_UNDEFINED = 1;
@@ -34,10 +36,13 @@ public class LoginController {
         this.memberService = memberService;
     }
 
-    public int handler(Packet recvPt) throws IOException {
-        switch (recvPt.getCode()) {
+    public int handler(ArrayList<Object> objectArrayList) throws IOException {
+        System.out.println("loginController entry");
+        Header header = (Header) objectArrayList.get(0);
+
+        switch (header.getCode()) {
             case Protocol.T1_CODE_LOGIN:  // 로그인 요청
-                return loginRequest(recvPt);
+                return loginRequest(objectArrayList);
             case Protocol.T1_CODE_CREATE:   // 계정 생성 요청
                 break;
                  // 아이디 찾기
@@ -47,26 +52,30 @@ public class LoginController {
     }
 
     // 로그인 요청
-    private int loginRequest(Packet recvPt) throws IOException {
+    private int loginRequest(ArrayList<Object> objectArrayList) throws IOException {
         System.out.println("loginRequest");
-        Packet sendPt = new Packet(Protocol.TYPE_RESPONSE);
+        ArrayList<Object> sendPt = null;
+
+        Header header = new Header(Protocol.TYPE_RESPONSE);
         // 받은 패킷에서 객체 꺼내옴
-        UserDTO recvUserDTO = (UserDTO) recvPt.getBody().get(0);
+        UserDTO recvUserDTO = (UserDTO) objectArrayList.get(1);
 
         UserDTO user = null;
         try {
             user = userService.login(recvUserDTO);
         } catch (NoSuchUserException e) {
             System.out.println(e.getMessage());
-            sendPt.setCode(Protocol.T2_CODE_FAIL);
-            sendPt.setBody(new MessageDTO(e.getMessage()));
-            sendPt.send(out);
+            header.setCode(Protocol.T2_CODE_FAIL);
+            sendPt.add(header);
+            sendPt.add(new MessageDTO(e.getMessage()));
+            out.writeObject(sendPt);
         }
 
         // 로그인 성공
-        sendPt.setCode(Protocol.T2_CODE_SUCCESS);
-        sendPt.setBody(user);
-        sendPt.send(out);
+        header.setCode(Protocol.T2_CODE_SUCCESS);
+        sendPt.add(header);
+        sendPt.add(recvUserDTO);
+        out.writeObject(sendPt);
 
         AdminDTO adminDTO = AdminDTO.builder().userId(user.getUserId()).build();
         if (adminService.retrieveById(adminDTO) != null) {
@@ -79,23 +88,23 @@ public class LoginController {
     }
 
     // 계정 생성 요청
-    private void createUser(Packet rectPt) throws Exception {
-        Packet sendPt = new Packet(Protocol.TYPE_RESPONSE);
-
-        try {
-            if (rectPt.getEntity() == Protocol.ENTITY_ADMIN) { // 관리자 계정생성
-                userService.createAdmin((UserDTO) rectPt.getBody().get(0));
-            } else if (rectPt.getEntity() == Protocol.ENTITY_MEMBER) { // 회원 계정생성
-                userService.createMember((UserDTO) rectPt.getBody().get(0));
-            }
-            sendPt.setCode(Protocol.T2_CODE_SUCCESS);
-            sendPt.send(out);
-        } catch (Exception e) {
-            // 계정생성 실패 시 예외처리
-            sendPt.setCode(Protocol.T2_CODE_FAIL);
-            sendPt.send(out);
-        }
-    }
+//    private void createUser(Header rectPt) throws Exception {
+//        Header sendPt = new Header(Protocol.TYPE_RESPONSE);
+//
+//        try {
+//            if (rectPt.getEntity() == Protocol.ENTITY_ADMIN) { // 관리자 계정생성
+//                userService.createAdmin((UserDTO) rectPt.getBody().get(0));
+//            } else if (rectPt.getEntity() == Protocol.ENTITY_MEMBER) { // 회원 계정생성
+//                userService.createMember((UserDTO) rectPt.getBody().get(0));
+//            }
+//            sendPt.setCode(Protocol.T2_CODE_SUCCESS);
+//            sendPt.send(out);
+//        } catch (Exception e) {
+//            // 계정생성 실패 시 예외처리
+//            sendPt.setCode(Protocol.T2_CODE_FAIL);
+//            sendPt.send(out);
+//        }
+//    }
 
 
 }

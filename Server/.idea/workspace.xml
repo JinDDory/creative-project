@@ -5,12 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f5713c0-9051-4a1b-97ba-5680ef922482" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/org.example.Server.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/org.example.Server.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/Dummy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/AdminDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/AdminDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartInfoDTO$ApartInfoDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartPriceIndicesDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/ApartPriceIndicesDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartTransactionInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/FavoriteDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO$MemberDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO$MemberDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/UserDTO$UserDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/UserDTO$UserDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/AdminDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/AdminDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/ApartInfoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/ApartTransactionInfoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/MyBatisConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/MyBatisConnectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/mapper/IAdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/mapper/IAdminMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/mapper/IApartInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/ApartInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/config/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_price_indices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_price_indices.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_transaction_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/network/Packet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/network/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/Protocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +97,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/WebProject"
-  }
-}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />

@@ -2,8 +2,6 @@ package service;
 
 import dto.UserDTO;
 import exception.NoSuchUserException;
-import persistence.dao.AdminDAO;
-import persistence.dao.MemberDAO;
 import persistence.dao.UserDAO;
 
 import java.util.List;

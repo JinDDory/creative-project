@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.Apart_price_indicesMapper">
-    <resultMap type="java.dto.Apart_price_indicesDTO" id="result">
+    <resultMap type="persistence.dto.Apart_price_indicesDTO" id="result">
         <result column="apart_price_id" property="apart_price_id"/>
         <result column="region" property="region"/>
         <result column="date" property="date"/>
