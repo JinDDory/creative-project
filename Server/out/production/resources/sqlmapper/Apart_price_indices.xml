@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.Apart_price_indicesMapper">
+    <resultMap type="persistence.dto.Apart_price_indicesDTO" id="result">
+        <result column="apart_price_id" property="apart_price_id"/>
+        <result column="region" property="region"/>
+        <result column="date" property="date"/>
+        <result column="price_indices" property="price_indices"/>
+    </resultMap>
+    <select id="selectAll" resultMap="result">
+        SELECT * FROM Apart_price_indices
+    </select>
+    <insert id="insertPostOne">
+        INSERT INTO Apart_price_indices (apart_price_id, region, date, price_indices) values (#{apart_price_id},#{region},#{date},#{price_indices})
+    </insert>
+    <update id="updatePostOne">
+        UPDATE Apart_price_indices set region = #{region}, date = #{date}, price_indices = #{price_indices} where apart_info_id = #{apart_info_id}
+    </update>
+    <delete id="deletePostOne">
+        DELETE FROM Apart_price_indices where apart_price_id = #{apart_price_id}
+    </delete>
+</mapper>

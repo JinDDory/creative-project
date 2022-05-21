@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f5713c0-9051-4a1b-97ba-5680ef922482" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/network/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/org.example.Server.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/org.example.Server.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/controller/Dummy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/AdminDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/AdminDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartInfoDTO$ApartInfoDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartPriceIndicesDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/ApartPriceIndicesDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/ApartTransactionInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/FavoriteDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO$MemberDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO$MemberDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/MemberDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/UserDTO$UserDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/UserDTO$UserDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/AdminDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/AdminDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/ApartInfoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/ApartTransactionInfoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/MyBatisConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/MyBatisConnectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/mapper/IAdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/mapper/IAdminMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/mapper/IApartInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/persistence/sql/AdminSql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/persistence/sql/ApartInfoSql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/ApartInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/config/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_price_indices.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_price_indices.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/sqlmapper/Apart_transaction_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/network/Packet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/network/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/network/Protocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="291F4yvM8X4SWpf5Ci9F0DCuOv4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Server.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DB_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DB_Project" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f5713c0-9051-4a1b-97ba-5680ef922482" name="Changes" comment="" />
+      <created>1652272498730</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652272498730</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/persistence/dao/MemberDAO.java</url>
+          <line>12</line>
+          <properties field="sqlSessionFactory" class="persistence.dao.MemberDAO" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
